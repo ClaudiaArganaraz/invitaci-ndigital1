@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow-x: hidden;
+        }
+
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-bg video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        .music {
+            margin-bottom: 20px;
+        }
+
+        .separator {
+            height: 2px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .time {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-bg">
+        <video autoplay loop muted>
+            <source src="background-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <div class="music">
+            <iframe src="https://drive.google.com/uc?export=download&id=YOURMUSICFILEID" frameborder="0" allow="autoplay" style="width:100%; height:100px;"></iframe>
+        </div>
+
+        <div class="image-container">
+            <img src="image1.jpg" alt="Imagen 1">
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="image-container">
+            <img src="image2.jpg" alt="Imagen 2">
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="image-container">
+            <img src="image3.jpg" alt="Imagen 3">
+        </div>
+
+        <div class="time">
+            6:00 PM
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="image-container">
+            <img src="image4.jpg" alt="Imagen 4">
+        </div>
+
+        <div class="image-container">
+            <img src="image5.jpg" alt="Imagen 5">
+        </div>
+
+        <a href="https://example.com" class="button">
+            <i class="fas fa-calendar-alt"></i> Ir a la Página Web
+        </a>
+
+        <div class="separator"></div>
+
+        <div class="image-container">
+            <img src="image6.jpg" alt="Imagen 6">
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="image-container">
+            <img src="image7.jpg" alt="Imagen 7">
+        </div>
+
+        <a href="https://example.com" class="button">
+            <i class="fas fa-gift"></i> Ir a la Página Web
+        </a>
+
+        <div class="separator"></div>
+
+        <div class="image-container">
+            <img src="image8.jpg" alt="Imagen 8">
+        </div>
+
+        <p>¡Espero verte en mi cumpleaños!</p>
+
+        <a href="https://example.com" class="button">
+            <i class="fas fa-rsvp"></i> Ir a la Página Web
+        </a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/YOUR_FONTAWESOME_KIT_ID.js" crossorigin="anonymous"></script>
+</body>
+</html>
